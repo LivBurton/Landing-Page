@@ -1,0 +1,137 @@
+body {
+	background-image: url("PaintedCanvas.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	min-height: 500px;
+	background-size: cover;
+	background-position: right top;
+	font-family: "Nunito";
+	font-size: 20px;
+}
+
+header {
+	background-color: white;
+	min-height: 8vw;
+	margin-bottom: 10px;
+	/* position: fixed; */
+	width: 100%;
+}
+
+#header-image {
+	width: 20vw;
+	padding-left: 4vw;
+	/* padding-top: 1vw; */
+}
+
+/*when h1 was in the header*/
+/*
+h1{
+	text-align: center;
+	position:absolute;
+	top:6vw;
+	right: 30vw;
+	font-size: 2vw;
+	color: black;
+}*/
+#header li a {
+	color: black;
+	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+#header li {
+	/* li is in line not the <a> */
+	display: inline-block;
+	/* padding: 20px;
+	background-color: black; */
+	font-size: 20px;
+}
+
+#nav-bar {
+	position: absolute;
+	top: 3.2vw;
+	right: 5vw;
+}
+
+.shopping img {
+	width: 30vw;
+}
+
+.wrap-products {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+#products img {
+	width: 17vw;
+}
+
+.wrap-products h3, .wrap-products p {
+	/* width: 17vw; */
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	/* margin: 0, auto; */
+}
+
+.wrap-products p {
+	font-size: 1.1vw;
+	margin-top: 8px;
+}
+
+.wrap-products h3 {
+	font-size: 1.2vw;
+	margin-top: 0;
+	background-color: hsl(160, 100%, 55%);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.p-box {
+	display: flex;
+	flex-direction: column;
+	border: solid;
+	justify-content: flex-start;
+	height: 23vw;
+	margin: 5px;
+	width:17vw;
+}
+
+@media (max-width: 800px) {
+  .wrap-products {
+    flex-direction: column;
+  }
+  .p-box {
+    max-width: 50vw;
+    width: 100%;
+	    margin: 0 auto;
+			/* min-height: 50vw; */
+			height: 100%;
+    margin-bottom: 10px;
+			justify-content: flex-start;
+  }
+	#products img {
+		width: 100%;
+	}
+	.wrap-products p {
+		font-size: 1.1vw;
+		margin-top: 0;
+		padding-bottom: 2vw;
+	}
+}
+
+.box {
+	/* background-color: hsl(165, 88%, 63%, 0.8); */
+	background-color: white;
+	/* opacity: 0.8;*/
+	/*this here set the opacity incudingt he image!*/
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
